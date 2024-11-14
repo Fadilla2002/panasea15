@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    background-image: url("img/background01.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr{
+    border-color: rgba(129, 129, 129, 0.6);
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding-left: 3px;
+}
+
+/* tr:nth-child(even){
+    background-color: #ff387f;
+}
+
+tr:nth-child(odd){
+    background-color: #ff6ea2;
+} */
+
+.background{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
+    height: fit-content;
+    width: 60%;
+}
+
+.flexparent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.containercol{
+    display: flex;
+    flex-direction: column;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+  
+.zoom:hover {
+    transform: scale(1.5); 
+}

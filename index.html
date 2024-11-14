@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+
+    <link rel="stylesheet" type="text/css" href="external.css">
+</head>
+<body>
+    <div class="flexparent">
+        <div class="background">
+            <h1>Portofolio</h1><hr>
+            <div class="flexbox">
+                <img class="zoom" src="img/profilephoto.jpeg" style="height: 300px; width: auto; border-radius: 15px;" alt="">
+            </div>
+            <div class="flexbox" style="margin-top: 5px;">
+                <table style="width: 80%;">
+                    <tr>
+                        <th>Nama:</th>
+                        <td>Sitaresmi Fadilla Meisya Pratama</td>
+                    </tr>
+                    <tr>
+                        <th>NPM:</th>
+                        <td>2211010163</td>
+                    </tr>
+                    <tr>
+                        <th>Jurusan:</th>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <th>Fakultas:</th>
+                        <td>Ilmu Komputer</td>
+                    </tr>
+                    <tr>
+                        <th>Hobi:</th>
+                        <td>Baking & Cooking</td>
+                    </tr>
+                    <tr>
+                        <th>Deskripsi Diri:</th>
+                        <td>Aku sita orang yang paling bahagia, ceria, menarik banyak rezeki dan cantik. Aku suka memasak, membuat kue, rebahan, dan main hp pastinya. Aku suka banget jalan jalan, tapi belum ada partner yang ngajakin aku jalan jalan. Tapi gapapa, aku layak mendapatkan cinta, kebahagiaan dan kesuksesan.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="background">
+            <h2>Riwayat Pendidikan</h2><hr>
+            <div class="flexbox">
+                <table style="width: 100%;">
+                    <tr>
+                        <th>SDN 2 Palapa</th>
+                        <td>2008-2014</td>
+                    </tr>
+                    <tr>
+                        <th>SMP 22 Bandar Lampung</th>
+                        <td>2014-2017</td>
+                    </tr>
+                    <tr>
+                        <th>SMA 2 Bandar Lampung</th>
+                        <td>2017-2020</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="background" style="width: fit-content;">
+            <h2>Masakan Sita</h2><hr>
+            <img class="zoom" src="img/kegiatan01.jpeg" alt="" style="height: 300px; width: auto; border-radius: 15px;">
+            <img class="zoom" src="img/kegiatan02.jpeg" alt="" style="height: 300px; width: auto; border-radius: 15px;">
+            <img class="zoom" src="img/kegiatan04.jpeg" alt="" style="height: 300px; width: auto; border-radius: 15px;">
+            <img class="zoom" src="img/kegiatan03.jpeg" alt="" style="height: 300px; width: auto; border-radius: 15px;">
+        </div>
+    
+        <div class="background">
+            <h2>Media Sosial</h2><hr>
+            <div class="flexbox">
+                <table style="width: 60%;">
+                    <tr style="background: none; ">
+                        <td align="center"><a href="https://instagram.com/sitaarsm"><img src="img/instagram.png" alt="" style="height: 200px; width: 200px;"></a></td>
+                        <td align="center"><a href="https://tiktok.com/@dennalden_"><img src="img/tiktok.png" alt="" style="height: 200px; width: 200px;"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+<footer>
+    <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by cobynecz - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/tiktok" title="tiktok icons">Tiktok icons created by cobynecz - Flaticon</a>
+</footer>
+<script>
+    let specific = document.querySelector(".flexparent");
+    let audio = document.createElement("audio");
+    audio.src = "audio.m4a"; // Asumsi audio.m4a ada di direktori yang sama
+    document.body.appendChild(audio);
+
+    specific.onmouseover = () => {
+        audio.play();
+    };
+</script>
+</html>
